@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  body {
+    @apply p-0 m-0 font-sans
+  }
+}
+
+@layer utilities{
+  .h1{
+  @apply text-[56px]  font-bold font-sans
+}
+.h2{
+  @apply text-[40px]  font-bold font-sans
+}
+.h3{
+  @apply text-[32px]  font-bold font-sans
+}
+.h4{
+  @apply text-[20px]  font-bold font-sans
+}
+.h5{
+  @apply text-[16px]  font-bold font-sans
+}
+.p1{
+  @apply text-[18px]  font-normal font-sans
+}
+.p2{
+  @apply text-[16px]  font-normal font-sans
+}
+
+.p3{
+  @apply text-[14px]  font-normal font-sans
+}
+
+.p4{
+  @apply text-[12px]  font-normal font-sans
+}
+.muted{
+  @apply text-[#1D1C31]/60 
+}
+.container{
+  @apply  px-10 
+}
+.g1{
+  @apply bg-gradient-to-br from-[#1B13A6] to-[#443CDF]
+}
+.g2{
+  @apply bg-gradient-to-l from-neutral-meduim  to-white/20
+}
+}
+
