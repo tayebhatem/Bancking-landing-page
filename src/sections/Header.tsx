@@ -19,7 +19,7 @@ const Header = () => {
     
   return (
    <motion.header style={{backgroundColor}} className="h-20  backdrop-blur-sm duration-500 transition-all  fixed top-0 left-0  flex items-center w-full  z-50 ">
-   <div className="md:container  mx-auto flex flex-row md:items-center justify-between w-full ">
+   <div className="container  mx-auto flex flex-row md:items-center justify-between w-full ">
    <Logo/>
    <nav  className={clsx("max-md:absolute flex flex-col md:flex-row items-center gap-6 max-md:pt-24  max-md:bg-white  max-md:rounded-bl-full transition-all duration-500",isOpen ? 'w-full h-screen max-md:rounded-bl-none top-0 right-0':'-top-10  -right-10 max-md:size-0')}>
    <ul className="flex flex-col md:flex-row gap-6">

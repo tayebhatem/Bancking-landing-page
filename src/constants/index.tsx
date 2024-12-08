@@ -115,3 +115,77 @@ export const feedbacks=[
  
     
 ]
+export const roadmap=[
+   {
+    id:1,
+    features:[
+          {
+            text:'Budgeting Tools',
+            icon:'ph:piggy-bank-light'
+          },
+          {
+            text:'Real-time Updates',
+            icon:'hugeicons:atm-01'
+          },
+          {
+            text:'Mobile Deposits',
+            icon:'weui:time-outlined'
+          }
+    ],
+    status:'Completed'
+   },
+   {
+    id:2,
+    features:[
+          {
+            text:'Budgeting Tools',
+            icon:'ph:piggy-bank-light'
+          },
+          {
+            text:'Real-time Updates',
+            icon:'hugeicons:atm-01'
+          },
+          {
+            text:'Mobile Deposits',
+            icon:'weui:time-outlined'
+          }
+    ],
+    status:'Completed'
+   },
+   {
+    id:3,
+    features:[
+          {
+            text:'Budgeting Tools',
+            icon:'ph:piggy-bank-light'
+          },
+          {
+            text:'Real-time Updates',
+            icon:'hugeicons:atm-01'
+          },
+          {
+            text:'Mobile Deposits',
+            icon:'weui:time-outlined'
+          }
+    ],
+    status:'Completed'
+   },
+   {
+    id:4,
+    features:[
+          {
+            text:'Budgeting Tools',
+            icon:'ph:piggy-bank-light'
+          },
+          {
+            text:'Real-time Updates',
+            icon:'hugeicons:atm-01'
+          },
+          {
+            text:'Mobile Deposits',
+            icon:'weui:time-outlined'
+          }
+    ],
+    status:'Completed'
+   }
+]
