@@ -3,10 +3,6 @@ import Card from "../components/card"
 import { benefits } from "../constants"
 import { FiArrowRight } from "react-icons/fi"
 import { Icon } from "@iconify/react";
-
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-
-import clsx from "clsx";
 import {motion} from 'framer-motion'
 import FeedBacks from "../components/FeedBacks";
 const About = () => {

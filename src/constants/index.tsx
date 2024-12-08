@@ -1,7 +1,3 @@
-import { AiOutlineSafety } from "react-icons/ai"
-import { CiBank } from "react-icons/ci"
-import { PiChartLineUpLight } from "react-icons/pi"
-
 
 
 export const navData=[

@@ -55,7 +55,7 @@ const Footer = () => {
             <div className="h-[1px] w-full bg-neutral-dark/10"/>
 <div className="flex flex-row items-center justify-between max-sm:flex-col gap-y-6 ">
                 <p className="p3 text-neutral-dark/60">
-                2023. All Rights Reserved
+                2023. Tayeb Hatem All Rights Reserved
                 </p>
 
                 <a href="/" className="p3 text-neutral-dark/60 cursor-pointer">
