@@ -2,12 +2,18 @@ import Button from "../components/button"
 import { logos, statistics } from "../constants"
 import mockupSvg from '../assets/images/mockup.svg'
 import MasterCard from "../components/MasterCard"
+import {motion} from 'framer-motion'
 
 const Hero = () => {
   return (
    <section className='relative g1 pt-20 space-y-20 max-md:py-10 '>
      <div className='container  mx-auto grid md:grid-cols-2  '>
-   <div className="space-y-8 ">
+   <motion.div 
+    initial={{ x: -100, opacity: 0 }} 
+    whileInView={{ x: 0, opacity: 1 }} 
+    viewport={{ once: true, amount: 0.5 }} 
+    transition={{ type: "spring", stiffness: 50, duration: 1 }}
+   className="space-y-8 " >
       <h1 className='  max-md:text-center text-left h3  lg:h2 xl:h1   text-white leading-tight'>
       Discover Financial Freedom with LegacyLine
       </h1>
@@ -38,18 +44,29 @@ const Hero = () => {
         ))
     }
    </ul>
-   </div>
+   </motion.div>
+
    <div className="flex  justify-center ">
   
   <div className="relative">
-  <img src={mockupSvg} alt="mockup"  className="object-contain w-[183px]   lg:w-[267px] hidden md:block "/>
+  <motion.img 
+   initial={{ x: 100, opacity: 0 }} 
+   whileInView={{ x: 0, opacity: 1 }} 
+   viewport={{ once: true, amount: 0.5 }} 
+   transition={{ type: "spring", stiffness: 50, duration:1 }}
+  src={mockupSvg} alt="mockup"  className="object-contain w-[183px]   lg:w-[267px] hidden md:block "/>
   <MasterCard/>
   </div>
 
    </div>
     </div>
 
-   <div className="bg-white/20  w-full py-6 hidden md:block ">
+   <motion.div 
+       initial={{ y: 100, opacity: 0 }} 
+       whileInView={{ y: 0, opacity: 1 }} 
+       viewport={{ once: true, amount: 0.5 }} 
+       transition={{ type: "tween", stiffness: 50, duration: 0.8 }}
+   className="bg-white/20  w-full py-6 hidden md:block ">
    <div className="container mx-auto  flex justify-between  flex-row items-center">
     {
         logos.map(({id,icon})=>(
@@ -57,7 +74,7 @@ const Hero = () => {
         ))
     }
     </div>
-   </div>
+   </motion.div>
  
 
    </section>

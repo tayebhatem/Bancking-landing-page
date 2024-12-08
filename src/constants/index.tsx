@@ -150,7 +150,7 @@ export const roadmap=[
             icon:'weui:time-outlined'
           }
     ],
-    status:'Completed'
+    status:'2023 Dec'
    },
    {
     id:3,
@@ -168,7 +168,7 @@ export const roadmap=[
             icon:'weui:time-outlined'
           }
     ],
-    status:'Completed'
+    status:'2024 Mar'
    },
    {
     id:4,
@@ -186,6 +186,6 @@ export const roadmap=[
             icon:'weui:time-outlined'
           }
     ],
-    status:'Completed'
+    status:'Coming Soon'
    }
 ]

@@ -2,12 +2,19 @@ import { Icon } from "@iconify/react/dist/iconify.js"
 import { roadmap } from "../constants"
 import clsx from "clsx"
 import { BsArrowRight } from "react-icons/bs"
-
+import {motion} from 'framer-motion'
 const Gadeline = () => {
   return (
    <section className=" py-20 relative overflow-hidden  bg-[#5D55FF]">
     <div className="container mx-auto space-y-10    ">
-        <div className=" grid gap-x-4 items-start max-md:grid-cols-1 grid-cols-4">
+
+    <motion.div 
+    className=" grid gap-x-4 items-start max-md:grid-cols-1 grid-cols-4"
+    initial={{ y: 100, opacity: 0 }} 
+    whileInView={{ y: 0, opacity: 1 }} 
+    viewport={{ once: true, amount: 0.5 }} 
+    transition={{ type: "tween", stiffness: 50, duration: 0.8 }}
+    >
 
     <h3 className="h4 md:h3 lg:h2 max-md:text-center text-white col-span-2">Guideline</h3>
     <p className="p4 lg:p3 text-white/60 max-md:hidden block ">
@@ -17,9 +24,15 @@ const Gadeline = () => {
     <p className="p4 lg:p3  text-white/60 max-md:hidden block">
     to help individuals and businesses manage their money, grow their wealth, and achieve their financial goals.
     </p>
-   </div>
+   </motion.div>
 
-   <div className="relative grid gap-6 max-md:grid-cols-1 grid-cols-4">
+   <motion.div 
+   className="relative grid gap-6 max-md:grid-cols-1 grid-cols-4"
+   initial={{ y: 100, opacity: 0 }} 
+   whileInView={{ y: 0, opacity: 1 }} 
+   viewport={{ once: true, amount: 0.5 }} 
+   transition={{ type: "tween", stiffness: 50, duration: 0.8 }}
+   >
    {
     roadmap.map(({id,features,status})=>(
         <div className={clsx("flex gap-y-32   gap-x-10    flex-col",id%2===1?'flex-col max-md:flex-row':'flex-col-reverse max-md:flex-row-reverse',id>2 && 'max-md:hidden')} key={id}>
@@ -53,13 +66,21 @@ const Gadeline = () => {
     ))
 }   
    </div>
-   </div>
-  <div className="w-full flex justify-center">
+   </motion.div>
+
+
+  <motion.div 
+  className="w-full flex justify-center"
+  initial={{ y: 100, opacity: 0 }} 
+  whileInView={{ y: 0, opacity: 1 }} 
+  viewport={{ once: true, amount: 0.5 }} 
+  transition={{ type: "tween", stiffness: 50, duration: 0.8 }}
+  >
   <button className="text-white p2 max-md:flex hidden  flex-row items-center gap-x-2 hover:text-white/80 " >
    See more
    <BsArrowRight className="size-5  "/>
    </button>
-  </div>
+  </motion.div>
             </div>
 
    
