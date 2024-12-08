@@ -66,8 +66,8 @@ const About = () => {
       Download the banking app to easily manage your finances, check account balances, transfer money, pay bills, and access a range of banking services from your mobile device.
       </p>
       <div className="flex flex-row items-center gap-4 max-md:justify-center flex-wrap ">
-      <img src="/images/play-store.svg" className="min-w-40" />
-        <img src="/images/app-store.svg"  className="min-w-40" />
+      <img src="/images/play-store.svg" className="min-w-40 cursor-pointer" />
+        <img src="/images/app-store.svg"  className="min-w-40 cursor-pointer" />
       </div>
      </div>
      </div>

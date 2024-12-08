@@ -39,10 +39,12 @@ const Hero = () => {
     }
    </ul>
    </div>
-   <div className="relative flex ">
+   <div className="flex  justify-center ">
   
+  <div className="relative">
   <img src={mockupSvg} alt="mockup"  className="object-contain w-[183px]   lg:w-[267px] hidden md:block "/>
   <MasterCard/>
+  </div>
 
    </div>
     </div>
