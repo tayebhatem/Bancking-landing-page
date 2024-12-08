@@ -1,6 +1,7 @@
 
 import './App.css'
 import About from './sections/About'
+import Footer from './sections/Footer'
 import Gadeline from './sections/Gadeline'
 import Header from './sections/Header'
 import Hero from './sections/Hero'
@@ -14,6 +15,7 @@ function App() {
      <Hero/>
      <About/>
      <Gadeline/>
+     <Footer/>
     </>
   )
 }

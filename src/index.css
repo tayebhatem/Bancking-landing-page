@@ -26,10 +26,10 @@
   @apply text-[20px]  font-bold font-sans
 }
 .h5{
-  @apply text-[16px]  font-bold font-sans
+  @apply text-[18px]  font-bold font-sans
 }
 .h6{
-  @apply text-[14px]  font-bold font-sans
+  @apply text-[16px]  font-bold font-sans
 }
 .p1{
   @apply text-[18px]  font-normal font-sans
