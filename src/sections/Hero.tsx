@@ -6,8 +6,8 @@ import {motion} from 'framer-motion'
 
 const Hero = () => {
   return (
-   <section className='relative g1 pt-20 space-y-20 max-md:py-10 '>
-     <div className='container  mx-auto grid md:grid-cols-2  '>
+   <section className='relative g1 pt-28  space-y-20 max-md:py-10 '>
+     <div className='container max-md:mt-10  mx-auto grid md:grid-cols-2  '>
    <motion.div 
     initial={{ x: -100, opacity: 0 }} 
     whileInView={{ x: 0, opacity: 1 }} 

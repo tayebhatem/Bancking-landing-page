@@ -35,7 +35,7 @@ const Gadeline = () => {
    >
    {
     roadmap.map(({id,features,status})=>(
-        <div className={clsx("flex gap-y-32   gap-x-10    flex-col",id%2===1?'flex-col max-md:flex-row':'flex-col-reverse max-md:flex-row-reverse',id>2 && 'max-md:hidden')} key={id}>
+        <div className={clsx("flex gap-y-32   gap-x-6    flex-col",id%2===1?'flex-col max-md:flex-row':'flex-col-reverse max-md:flex-row-reverse',id>2 && 'max-md:hidden')} key={id}>
 
     <ul className="p-6 space-y-6 border-2 border-white/10 rounded-lg">
        {
